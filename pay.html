@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPal Payment Button</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Basic styles for the page layout */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .paypal-button {
+      position: relative;
+      border: none;
+      background-color: #003087;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: background-color 0.3s;
+    }
+
+    .paypal-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .shine {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+      opacity: 0.8;
+      animation: shineEffect 2.5s infinite;
+    }
+
+    @keyframes shineEffect {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://www.paypal.com/paypalme/mudassirs472" class="paypal-button">
+      <span class="shine"></span>
+      <span class="paypal-text">Pay with PayPal</span>
+    </a>
+  </div>
+</body>
+</html>
